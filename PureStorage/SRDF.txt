@@ -1,0 +1,27 @@
+This is all for group 4 which is test. Prod is group 3
+
+
+Create Pair File
+
+symrdf -f c:\users\desktop\pairfiletest.txt -rdfg 4 createpair -establish -sid 4395 -type rdf1
+
+Establish Replication Paor
+D:\SYMCLI\bin>symrdf -f c:\users\desktop\pairfiletest.txt -rdfg 4 createpair -establish -sid 4395 -type rdf1 -rdf_mode async
+
+Resume Replication
+symrdf -f c:\users\desktop\pairfiletest.txt -rdfg 4 resume -sid 4395
+
+Querey Replication
+symrdf -f c:\users\desktop\pairfiletest.txt -rdfg 4 query -sid 4395
+
+Shows all in list
+symrdf list -rdfg 3 -sid 4395
+
+
+
+Create new group and out only from pair file in it.
+
+
+Resumes Replication
+symrdf -g cg1 resume
+
